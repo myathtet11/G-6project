@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instant Play</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-yellow-900">
+    <!-- nav -->
+    <nav class="w-full bg-cyan-500 flex items-center justify-between px-5 py-4">
+      <div class="flex items-center">
+        <img src="./game.png" class="w-20" />
+        <p class="text-2xl text-slate-200 ml-10 font-bold font-serif">
+          Instant Play
+        </p>
+      </div>
+      <div class="flex items-center">
+        <input
+          type="text"
+          class="w-52 bg-gray-500 rounded-md px-3 py-2 mr-5"
+          placeholder="Search"
+        />
+        <img src="./search-circle.svg" class="w-14" />
+      </div>
+    </nav>
+
+    <!-- section -->
+    <div class="flex flex-col items-center">
+      <div>
+        <img src="./44306.gif" />
+      </div>
+      <div class="flex justify-evenly mt-20">
+        <a href="./tictactoe.html">
+            <div class="w-52 cursor-pointer">
+                <img src="./tic-tac-toe.png" alt="" />
+              </div>
+        </a>
+        <a href="./minesweeper.html">
+            <div class="w-52 ml-10 cursor-pointer">
+                <img src="./minesweeper.png" class="bg-gray-500 rounded-lg" />
+              </div>
+        </a>
+        <a href="./rps.html">
+            <div class="w-52 ml-10 cursor-pointer">
+                <img src="./rock-paper-scissors.png" class="bg-gray-500 rounded-lg" />
+              </div>
+        </a>
+        <div class="w-52 ml-10 rounded-lg cursor-pointer" id="more">
+          <img src="./plus.png" class="rounded-lg" />
+        </div>
+      </div>
+    </div>
+    <script>
+        let more = document.getElementById("more");
+        more.addEventListener("click" ,  () => {
+            alert("More Games Coming Soon");
+        })
+    </script>
+  </body>
+</html>

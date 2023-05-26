@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script1.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gameboard hide">
+        <h1 id="title">Tic Tac Toe</h1>
+        <div id="turn" class="hide turn">Player 1 Turn!</div>
+        <div class="row">
+          <div class="btn" id="1,1"></div>
+          <div class="btn" id="1,2"></div>
+          <div class="btn" id="1,3"></div>
+        </div>
+        <div class="row">
+          <div class="btn" id="2,1"></div>
+          <div class="btn" id="2,2"></div>
+          <div class="btn" id="2,3"></div>
+        </div>
+        <div class="row">
+          <div class="btn" id="3,1"></div>
+          <div class="btn" id="3,2"></div>
+          <div class="btn" id="3,3"></div>
+        </div>
+        <button id="play">Play</button>
+      </div>
+    </div>
+    <div class="resultPlayer hide">
+      <p id="result">message</p>
+      <button id="playagain">Play Again</button>
+    </div>
+  </body>
+</html>
