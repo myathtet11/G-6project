@@ -24,17 +24,7 @@ playBtn.addEventListener("click", () => {
 
 playAgainBtn.addEventListener("click", () => {
   gameboard.classList.remove("hide");
-  for (let i = 0; i < allBtns.length; i++) {
-    let cell = allBtns[i];
-    cell.innerHTML = "";
-  }
-  playBtn.style.backgroundColor = "yellow";
-  finished = false;
-  r1 = ["", "", ""];
-  r2 = ["", "", ""];
-  r3 = ["", "", ""];
-  current = firstPlayer;
-  playGame();
+ location.reload();
 });
 
 function playGame() {
