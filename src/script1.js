@@ -24,7 +24,7 @@ playBtn.addEventListener("click", () => {
 
 playAgainBtn.addEventListener("click", () => {
   gameboard.classList.remove("hide");
- location.reload();
+  location.reload();
 });
 
 function playGame() {
@@ -80,8 +80,10 @@ function playGame() {
             current = firstPlayer;
           }
         }
-        draw();
         whoWin();
+        if (finished == false) {
+          draw();
+        }
       }
     });
   }
@@ -147,7 +149,7 @@ function draw() {
     (r1[1] && r2[1] && r3[1]) != "" &&
     (r1[2] && r2[2] && r3[2]) != ""
   ) {
-    finished == true;
+    finished = true;
     resultText.innerText = "Draw!";
     result.classList.remove("hide");
     gameboard.classList.add("hide");
